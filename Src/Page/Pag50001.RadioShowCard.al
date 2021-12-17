@@ -4,9 +4,8 @@ page 50001 "Radio Show Card"
     Caption = 'Radio Show Card';
     PageType = Card;
     SourceTable = "Radio Show";
-    UsageCategory = Lists;
-    ApplicationArea = All;
-
+    UsageCategory = Documents;
+    ApplicationArea = all;
     layout
     {
         area(content)

@@ -1,11 +1,11 @@
 page 50000 "Radio Show List"
 {
-
-    ApplicationArea = All;
-    Caption = 'Radio Show List';
     PageType = List;
     SourceTable = "Radio Show";
     UsageCategory = Lists;
+    ApplicationArea = All;
+    CardPageId = "Radio Show Card";
+
 
     layout
     {
@@ -66,5 +66,4 @@ page 50000 "Radio Show List"
             }
         }
     }
-
 }

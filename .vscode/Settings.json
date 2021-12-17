@@ -14,5 +14,7 @@
     "git.enableSmartCommit": true,
     "editor.maxTokenizationLineLength": 50000,
     "gitignore.cacheExpirationInterval": 3600,
-    "al.ruleSetPath": "./ruleset.json"
+    "al.ruleSetPath": "./ruleset.json",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 10
 }

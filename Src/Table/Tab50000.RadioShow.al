@@ -55,13 +55,75 @@ table 50000 "Radio Show"
             Caption = 'Royalty Cost ';
             DataClassification = CustomerContent;
         }
+        field(1000; Frequency; Option)
+        {
+            Caption = 'Frequency';
+            OptionCaption = 'Hourly,Daily,Weekly,';
+            DataClassification = CustomerContent;
+            OptionMembers = Hourly,Daily,Weekly;
+        }
+        field(1010; "PSA Planned Quantity"; Integer)
+        {
+            Caption = 'PSA Planned Quantity';
+            DataClassification = CustomerContent;
+        }
+        field(1020; "Ads Planned Quantity"; Integer)
+        {
+            Caption = 'Ads Planned Quantity';
+            DataClassification = CustomerContent;
+        }
+        field(1030; "News Required"; Boolean)
+        {
+            Caption = 'News Required';
+            DataClassification = CustomerContent;
+        }
+        field(1040; "News Duration"; Duration)
+        {
+            Caption = 'News Duration';
+            DataClassification = CustomerContent;
+        }
+        field(1050; "Sports Required"; Boolean)
+        {
+            Caption = 'Sports Required';
+            DataClassification = CustomerContent;
+        }
+        field(1060; "Sports Duration"; Duration)
+        {
+            Caption = 'Sports Duration';
+            DataClassification = CustomerContent;
+        }
+        field(1070; "Weather Requires"; Boolean)
+        {
+            Caption = 'Weather Requires';
+            DataClassification = CustomerContent;
+        }
+        field(1080; "Weather Duration"; Duration)
+        {
+            Caption = 'Weather Duration';
+            DataClassification = CustomerContent;
+        }
+        field(1090; "Date Filter"; Date)
+        {
+            Caption = 'Date Filter';
+            FieldClass = FlowFilter;
+        }
     }
+
     keys
     {
-        key(PK; "No.")
+        key(PK; "No.", "Radio Show Type")
         {
             Clustered = true;
         }
     }
 
+    fieldgroups
+    {
+        fieldgroup(DropDown; "No.", Name, "Host Name")
+        {
+        }
+        fieldgroup(Brick; "No.", Name, "Audience Share")
+        {
+        }
+    }
 }

@@ -3,8 +3,9 @@ report 50000 "Radio Show"
     ApplicationArea = All;
     Caption = 'Radio Show';
     UsageCategory = ReportsAndAnalysis;
+    DefaultLayout = Word;
     WordLayout = 'Src/Report/Layouts/RadioShows.docx';
-    RDLCLayout = 'Src/Report/Layouts/RadioShows.RDLC';
+    //RDLCLayout = 'Src/Report/Layouts/RadioShows.RDLC';
     dataset
     {
         dataitem(RadioShow; "Radio Show")

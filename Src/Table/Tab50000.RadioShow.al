@@ -2,18 +2,27 @@ table 50000 "Radio Show"
 {
     Caption = 'Radio Show';
     DataClassification = CustomerContent;
-
     fields
     {
         field(1; "No."; Code[20])
         {
             Caption = 'No.';
             DataClassification = CustomerContent;
+            trigger OnValidate()
+            begin
+            end;
+
+            trigger OnLookup()
+            begin
+
+            end;
         }
         field(10; "Radio Show Type"; Code[10])
         {
             Caption = 'Radio Show Type';
             DataClassification = CustomerContent;
+            TableRelation = "Radio Show Type";
+
         }
         field(20; Name; Text[50])
         {
@@ -55,12 +64,10 @@ table 50000 "Radio Show"
             Caption = 'Royalty Cost ';
             DataClassification = CustomerContent;
         }
-        field(1000; Frequency; Option)
+        field(1000; Frequency; Enum "RadioShowFrequency")
         {
             Caption = 'Frequency';
-            OptionCaption = 'Hourly,Daily,Weekly,';
             DataClassification = CustomerContent;
-            OptionMembers = Hourly,Daily,Weekly;
         }
         field(1010; "PSA Planned Quantity"; Integer)
         {
@@ -76,6 +83,7 @@ table 50000 "Radio Show"
         {
             Caption = 'News Required';
             DataClassification = CustomerContent;
+            InitValue = true;
         }
         field(1040; "News Duration"; Duration)
         {
@@ -86,16 +94,18 @@ table 50000 "Radio Show"
         {
             Caption = 'Sports Required';
             DataClassification = CustomerContent;
+            InitValue = true;
         }
         field(1060; "Sports Duration"; Duration)
         {
             Caption = 'Sports Duration';
             DataClassification = CustomerContent;
         }
-        field(1070; "Weather Requires"; Boolean)
+        field(1070; "Weather Required"; Boolean)
         {
             Caption = 'Weather Requires';
             DataClassification = CustomerContent;
+            InitValue = true;
         }
         field(1080; "Weather Duration"; Duration)
         {
@@ -108,7 +118,6 @@ table 50000 "Radio Show"
             FieldClass = FlowFilter;
         }
     }
-
     keys
     {
         key(PK; "No.", "Radio Show Type")

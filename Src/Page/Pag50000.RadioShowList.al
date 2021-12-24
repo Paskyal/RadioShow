@@ -17,6 +17,7 @@ page 50000 "Radio Show List"
                 {
                     ToolTip = 'Specifies the value of the No. field.';
                     ApplicationArea = All;
+
                 }
                 field("Radio Show Type"; Rec."Radio Show Type")
                 {

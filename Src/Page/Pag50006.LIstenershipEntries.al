@@ -1,10 +1,10 @@
-page 50006 "LIstenership Entries"
+page 50006 "Listenership Entries"
 {
 
     ApplicationArea = All;
     Caption = 'LIstenership Entries';
     PageType = List;
-    SourceTable = "LIstenership Entry";
+    SourceTable = "Listenership Entry";
     UsageCategory = Lists;
 
     layout

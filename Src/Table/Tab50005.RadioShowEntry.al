@@ -25,7 +25,7 @@ table 50005 "Radio Show Entry"
             Caption = 'No.';
             DataClassification = CustomerContent;
         }
-        field(40; "Data Format"; Enum "RadioShowntryEDataFormat")
+        field(40; "Data Format"; Enum "RadioShowEntryDataFormat")
         {
             Caption = 'Data Format';
             DataClassification = CustomerContent;

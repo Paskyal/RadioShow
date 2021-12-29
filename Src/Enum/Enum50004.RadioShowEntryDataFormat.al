@@ -1,4 +1,4 @@
-enum 50004 "RadioShowntryEDataFormat"
+enum 50004 "RadioShowEntryDataFormat"
 {
     Extensible = true;
 

@@ -15,8 +15,10 @@ permissionset 50000 "MyPermissionSet"
         table "Playlist Item Rate" = X,
         tabledata "Radio Show Entry" = RIMD,
         table "Radio Show Entry" = X,
-        tabledata "LIstenership Entry" = RIMD,
-        table "LIstenership Entry" = X,
+        tabledata "Listenership Entry" = RIMD,
+        table "Listenership Entry" = X,
         tabledata Publisher = RIMD,
-        table Publisher = X;
+        table Publisher = X,
+        tabledata "Date Formula" = RIMD,
+        table "Date Formula" = X;
 }

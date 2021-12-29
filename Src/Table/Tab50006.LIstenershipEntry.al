@@ -1,4 +1,4 @@
-table 50006 "LIstenership Entry"
+table 50006 "Listenership Entry"
 {
     Caption = 'LIstenership Entry';
     DataClassification = CustomerContent;

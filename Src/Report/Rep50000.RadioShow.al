@@ -37,7 +37,7 @@ report 50000 "Radio Show"
             column(AdvertisingRevenue; "Advertising Revenue")
             {
             }
-            column(RoyaltyCost; "Royalty Cost ")
+            column(RoyaltyCost; "Royalty Cost")
             {
             }
         }

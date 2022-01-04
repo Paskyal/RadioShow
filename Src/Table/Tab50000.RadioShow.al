@@ -22,7 +22,6 @@ table 50000 "Radio Show"
             Caption = 'Radio Show Type';
             DataClassification = CustomerContent;
             TableRelation = "Radio Show Type";
-
         }
         field(20; Name; Text[50])
         {
@@ -68,7 +67,7 @@ table 50000 "Radio Show"
             CalcFormula = sum("Radio Show Entry"."Fee Amount"
             where("Radio Show No." = field("No."), "Data Format" = filter(Advertisement)));
         }
-        field(130; "Royalty Cost "; Decimal)
+        field(130; "Royalty Cost"; Decimal)
         {
             Caption = 'Royalty Cost ';
             Editable = false;

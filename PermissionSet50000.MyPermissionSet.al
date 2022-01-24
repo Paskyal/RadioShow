@@ -20,5 +20,9 @@ permissionset 50000 "MyPermissionSet"
         tabledata Publisher = RIMD,
         table Publisher = X,
         tabledata "Date Formula" = RIMD,
-        table "Date Formula" = X;
+        table "Date Formula" = X,
+        tabledata "Date Formula Test" = RIMD,
+        table "Date Formula Test" = X,
+        tabledata "Radio Show Fan" = RIMD,
+        table "Radio Show Fan" = X;
 }

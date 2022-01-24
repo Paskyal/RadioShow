@@ -6,7 +6,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "OnPrem",
-            "server": "http://v19New",
+            "server": "http://BC19-2-32",
             "serverInstance": "BC",
             "authentication": "Windows",
             "startupObjectId": 50000,

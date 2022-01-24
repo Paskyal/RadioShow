@@ -130,5 +130,13 @@ page 50000 "Radio Show List"
                 }
             }
         }
+        area(FactBoxes)
+        {
+            part(Fans; "Radio Show Fan Factbox")
+            {
+                ApplicationArea = all;
+                SubPageLink = "Radio Show No." = field("No.");
+            }
+        }
     }
 }
